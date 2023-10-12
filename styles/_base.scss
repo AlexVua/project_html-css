@@ -1,0 +1,91 @@
+$color-main: #323264;
+$color-alt: #46466e;
+$color-soft: #686887;
+
+$color-accent: #f0145a;
+
+$color-regular: #24a3ff;
+$color-hover: #0085ff;
+$color-active: #006ccf;
+
+$color-bg: #f5f5fa;
+$color-bg-alt: #ededf7;
+$color-text: #b3b3ba;
+$color-separator: #e6e6f0;
+
+$gradient-supersoft: linear-gradient(
+  228.57deg,
+  #323264 11.93%,
+  #323264 57.17%,
+  #643e72 87.46%
+);
+
+@mixin gradient-main {
+  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@mixin hero-title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+@mixin h2-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+@mixin h3-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+@mixin h3-caps-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@mixin h4-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+}
+
+@mixin circle-scroll-hover {
+  opacity: 0.6;
+  color: $color-regular;
+}
+
+@mixin circle-scroll-active {
+  opacity: 1;
+  color: $color-regular;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
